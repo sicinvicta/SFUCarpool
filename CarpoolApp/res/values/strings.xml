@@ -4,8 +4,23 @@
     <string name="app_name">CarpoolApp</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-    <string name="frag_1">frag_1</string>
     <string name="frag_2">frag_2</string>
     <string name="frag_3">frag_3</string>
+    <string name="textViewUsername">CarpoolerUsername</string>
+    <string name="textViewTripDate">Date</string>
+    <string name="textViewTripTime">Time</string>
+    <string name="textViewDataCampusA">Start</string>
+    <string name="textViewDataCampusB">End</string>
+    <string name="textViewDetails">Details</string>
+    <string name="textViewDataTripDate">Mon July 1</string>
+    <string name="textViewDataTripTime">12:15pm</string>
+    <string name="textViewCampusA">Point A</string>
+    <string name="textViewCampusB">Point B</string>
+    <string name="textViewTransportMode">Mode</string>
+    <string name="textViewTMDriver">D</string>
+    <string name="textViewTMPassenger">P</string>
+    <string name="TextViewCampusSry">SRY</string>
+    <string name="textViewCampusVan">VAN</string>
+    <string name="textViewCampusBby">BBY</string>
 
 </resources>
