@@ -38,5 +38,15 @@
     <string name="textViewDataCarMake">Ford</string>
     <string name="textViewDataCarColor">Silver</string>
     <string name="textViewDataCarYear">2013</string>
+    <string name="dialogCancel">Cancel</string>
+    <string name="dialogDelete">Delete</string>
+    <string name="dialogEdit">Edit</string>
+    <string name="dialogSave">Save</string>
+    <string name="dialogAccept">Accept</string>
+    <string name="dialogOk">OK</string>
+    <string name="dialogTitleCampusStart">Select Start Campus:</string>
+    <string name="dialogTitleCampusEnd">Select End Campus:</string>
+    <string name="textViewTitleCreateNewTrip">Create New Trip Post</string>
+    <string name="textViewCampusSelect">Select a Campus</string>
 
 </resources>

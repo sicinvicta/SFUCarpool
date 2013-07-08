@@ -25,6 +25,7 @@
         <activity android:name=".ViewTripsActivity"/>
         <activity android:name=".MyTripsActivity"/>
         <activity android:name=".CreateTripActivity"/>
+        <activity android:name=".CreateNewTripActivity"/>
         <activity android:name=".ViewTripDetailsActivity"/>
     </application>
 

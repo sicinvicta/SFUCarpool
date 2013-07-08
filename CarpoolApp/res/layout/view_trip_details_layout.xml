@@ -149,7 +149,7 @@
         android:paddingBottom="5dp">
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/textViewCreateTripCampusEnd"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -157,7 +157,7 @@
             android:textColor="@android:color/holo_blue_dark" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textViewCreateTripCampusStart"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"

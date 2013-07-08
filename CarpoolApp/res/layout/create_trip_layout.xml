@@ -1,13 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#e5e5e5" >
+        
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@android:color/holo_green_light" >
 
-    <TextView
-        android:id="@+id/textViewFrag_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/frag_3" />
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textViewTitleCreateNewTrip"
+                android:textColor="@android:color/white" />
 
-</LinearLayout>
+        </TableRow>
+        
+<!-- SELECT CAMPUS START -->
+        <TableRow
+            android:id="@+id/tableRowCreateTripCampusStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/selector">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/textViewCampusStart"
+                android:textColor="@android:color/holo_blue_dark" />
+            
+            <TextView
+                android:id="@+id/textViewCreateTripCampusStart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/textViewCampusSelect"
+                android:textSize="12sp" />
+
+        </TableRow>
+        
+        <View
+		    android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:background="@android:color/darker_gray"/>
+        
+ <!-- SELECT CAMPUS END -->       
+        <TableRow
+            android:id="@+id/tableRowCreateTripCampusEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/selector" >
+            
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/textViewCapusEnd"
+                android:textColor="@android:color/holo_blue_dark" />
+            
+            <TextView
+                android:id="@+id/textViewCreateTripCampusEnd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/textViewCampusSelect"
+                android:textSize="12sp" />
+
+        </TableRow>
+
+        <View
+		    android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:background="@android:color/darker_gray"/>
+       
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/buttonDialogTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ButtonA" />
+
+            <Button
+                android:id="@+id/buttonDialogTest2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ButtonB" />
+
+        </TableRow>
+    </TableLayout>
