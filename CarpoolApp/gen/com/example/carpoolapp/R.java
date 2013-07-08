@@ -22,19 +22,33 @@ public final class R {
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
-        public static final int selector=0x7f020001;
+        public static final int icon_driver=0x7f020001;
+        public static final int icon_email=0x7f020002;
+        public static final int icon_leave=0x7f020003;
+        public static final int icon_sms=0x7f020004;
+        public static final int selector=0x7f020005;
     }
     public static final class id {
-        public static final int action_settings=0x7f080013;
+        public static final int action_settings=0x7f08001c;
         public static final int pager=0x7f080000;
         public static final int tableRow1=0x7f080002;
         public static final int tableRow2=0x7f080004;
         public static final int tableRow3=0x7f080006;
         public static final int tableRow4=0x7f08000c;
+        public static final int tableRow5=0x7f080014;
+        public static final int tableRow6=0x7f080013;
+        public static final int tableRow7=0x7f080016;
         public static final int textView1=0x7f080003;
         public static final int textView10=0x7f08000f;
         public static final int textView11=0x7f080010;
         public static final int textView12=0x7f080011;
+        public static final int textView13=0x7f080012;
+        public static final int textView14=0x7f080015;
+        public static final int textView15=0x7f080017;
+        public static final int textView16=0x7f080018;
+        public static final int textView17=0x7f080019;
+        public static final int textView18=0x7f08001a;
+        public static final int textView19=0x7f08001b;
         public static final int textView2=0x7f080005;
         public static final int textView3=0x7f080007;
         public static final int textView4=0x7f080008;
@@ -43,7 +57,6 @@ public final class R {
         public static final int textView7=0x7f08000b;
         public static final int textView8=0x7f08000e;
         public static final int textView9=0x7f08000d;
-        public static final int textViewFrag_2=0x7f080012;
         public static final int textViewFrag_3=0x7f080001;
     }
     public static final class layout {
@@ -57,7 +70,6 @@ public final class R {
         public static final int main=0x7f070000;
     }
     public static final class string {
-        public static final int TextViewCampusSry=0x7f050012;
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
         public static final int frag_2=0x7f050003;
@@ -66,18 +78,35 @@ public final class R {
         public static final int textViewCampusA=0x7f05000d;
         public static final int textViewCampusB=0x7f05000e;
         public static final int textViewCampusBby=0x7f050014;
+        public static final int textViewCampusSry=0x7f050012;
+        public static final int textViewCampusStart=0x7f050016;
         public static final int textViewCampusVan=0x7f050013;
+        public static final int textViewCapusEnd=0x7f050017;
+        public static final int textViewCarColor=0x7f05001f;
+        public static final int textViewCarDetails=0x7f05001c;
+        public static final int textViewCarMake=0x7f05001e;
+        public static final int textViewCarModel=0x7f05001d;
+        public static final int textViewCarYear=0x7f050020;
+        public static final int textViewCarpoolGuests=0x7f05001a;
         public static final int textViewDataCampusA=0x7f050008;
         public static final int textViewDataCampusB=0x7f050009;
+        public static final int textViewDataCarColor=0x7f050023;
+        public static final int textViewDataCarMake=0x7f050022;
+        public static final int textViewDataCarModel=0x7f050021;
+        public static final int textViewDataCarYear=0x7f050024;
+        public static final int textViewDataCarpoolGuests=0x7f05001b;
+        public static final int textViewDataLocationMeetingDetails=0x7f050019;
         public static final int textViewDataTripDate=0x7f05000b;
         public static final int textViewDataTripTime=0x7f05000c;
         public static final int textViewDetails=0x7f05000a;
+        public static final int textViewLocationMeetDetails=0x7f050018;
         public static final int textViewTMDriver=0x7f050010;
         public static final int textViewTMPassenger=0x7f050011;
         public static final int textViewTransportMode=0x7f05000f;
         public static final int textViewTripDate=0x7f050006;
         public static final int textViewTripTime=0x7f050007;
         public static final int textViewUsername=0x7f050005;
+        public static final int textViewUsernameDriver=0x7f050015;
     }
     public static final class style {
         /** 

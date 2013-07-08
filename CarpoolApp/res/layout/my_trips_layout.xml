@@ -51,7 +51,7 @@
             android:id="@+id/textView3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="2.5"
+            android:layout_weight="3"
             android:textColor="@android:color/holo_orange_dark"
             android:text="@string/textViewTripDate" />
 
@@ -59,7 +59,7 @@
             android:id="@+id/textView4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1.8"
+            android:layout_weight="2"
             android:textColor="@android:color/holo_orange_dark"
             android:text="@string/textViewTripTime" />
 
@@ -67,7 +67,7 @@
             android:id="@+id/textView5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1.8"
+            android:layout_weight="1.5"
             android:textColor="@android:color/holo_orange_dark"
             android:text="@string/textViewCampusA" />
 
@@ -75,7 +75,7 @@
             android:id="@+id/textView6"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1.8"
+            android:layout_weight="1.5"
             android:textColor="@android:color/holo_orange_dark"
             android:text="@string/textViewCampusB" />
 
@@ -109,7 +109,7 @@
             android:id="@+id/textView9"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="2.5"
+            android:layout_weight="3"
             android:text="@string/textViewDataTripDate"
             android:textSize="12sp" />
 
@@ -117,7 +117,7 @@
             android:id="@+id/textView8"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="2.5"
+            android:layout_weight="2"
             android:text="@string/textViewDataTripTime"
             android:textSize="12sp" />
 
@@ -125,7 +125,7 @@
             android:id="@+id/textView10"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1.8"
+            android:layout_weight="1.5"
             android:text="@string/textViewCampusBby"
             android:textSize="12sp" />
         
@@ -133,15 +133,15 @@
             android:id="@+id/textView11"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1.8"
-            android:text="@string/TextViewCampusSry"
+            android:layout_weight="1.7"
+            android:text="@string/textViewCampusSry"
             android:textSize="12sp" />
         
         <TextView
             android:id="@+id/textView12"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight=".5"
             android:text="@string/textViewTMPassenger"
             android:textSize="12sp" />
 
