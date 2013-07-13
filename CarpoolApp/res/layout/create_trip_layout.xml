@@ -1,105 +1,212 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+<TableLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="10dp"
-    android:background="#e5e5e5" >
+    android:background="@color/background_grey" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableRow
+        android:id="@+id/tableRowCreateTripButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/buttonCreateTripCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/textButtonCancel"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/buttonCreateTripCreate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/textButtonCreate"
+            android:textSize="14sp" />
+    </TableRow>
         
         <TableRow
-            android:id="@+id/tableRow1"
+            android:id="@+id/tableRowCreateTripTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:background="@android:color/holo_green_light" >
+            android:background="@android:color/holo_green_light"
+            android:padding="10dp" >
 
             <TextView
                 android:id="@+id/textView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
                 android:text="@string/textViewTitleCreateNewTrip"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
 
         </TableRow>
         
-<!-- SELECT CAMPUS START -->
         <TableRow
-            android:id="@+id/tableRowCreateTripCampusStart"
+            android:id="@+id/tableRowCreateTripDateTimeTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:background="@drawable/selector">
-
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="12dp" >
+	<!-- TRIP DATE -->
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/textViewCreateTripPickDateTitle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/textViewCampusStart"
-                android:textColor="@android:color/holo_blue_dark" />
-            
+                android:paddingLeft="5dp"
+                android:text="@string/textViewPickDate"
+                android:textSize="12sp"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+	<!-- TRIP TIME -->
+
+            <TextView
+                android:id="@+id/textViewCreateTripPickTimeTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:text="@string/textViewPickTimeSet"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp" />
+
+        </TableRow>
+		
+        <TableRow
+            android:id="@+id/tableRowCreateTripDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selectorgrey"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+	<!-- SELECT DATE -->
+            <TextView
+                android:id="@+id/textViewCreateTripPickDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/textViewPickDate"
+                android:textSize="14sp"
+                style="@android:style/Widget.DeviceDefault.Light.Spinner"
+                android:clickable="true" />
+	<!-- SELECT TIME -->
+            <TextView
+                android:id="@+id/textViewCreateTripPickTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/textViewPickTime"
+                android:textSize="14sp"
+                style="@android:style/Widget.DeviceDefault.Light.Spinner"
+                android:clickable="true" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowCreateTripToFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="12dp" >
+	<!-- CAMPUS FROM -->
+            <TextView
+                android:id="@+id/textViewFrom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:text="@string/textViewFrom"
+                android:textSize="12sp"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+	<!-- CAMPUS TO -->
+            <TextView
+                android:id="@+id/textViewTo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:text="@string/textViewTo"
+                android:textSize="12sp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowCreateTripCampusSelection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+	<!-- SELECT CAMPUS START -->
             <TextView
                 android:id="@+id/textViewCreateTripCampusStart"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/textViewCampusSelect"
-                android:textSize="12sp" />
-
-        </TableRow>
-        
-        <View
-		    android:layout_width="fill_parent"
-		    android:layout_height="1dp"
-		    android:background="@android:color/darker_gray"/>
-        
- <!-- SELECT CAMPUS END -->       
-        <TableRow
-            android:id="@+id/tableRowCreateTripCampusEnd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:background="@drawable/selector" >
-            
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/textViewCapusEnd"
-                android:textColor="@android:color/holo_blue_dark" />
-            
+                android:text="@string/textViewCampusStart"
+                android:textSize="14sp"
+                style="@android:style/Widget.DeviceDefault.Light.Spinner"
+                android:clickable="true" />
+	<!-- SELECT CAMPUS END -->
             <TextView
                 android:id="@+id/textViewCreateTripCampusEnd"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/textViewCampusSelect"
+                android:text="@string/textViewCampusEnd"
+                android:textSize="14sp"
+                style="@android:style/Widget.DeviceDefault.Light.Spinner"
+                android:clickable="true" />
+            
+        </TableRow>
+        <!--<View
+		    android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:background="@android:color/darker_gray"/> -->
+
+        <TableRow
+            android:id="@+id/tableRowCreateTripAddDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="12dp" >
+
+            <TextView
+                android:id="@+id/textViewCreateTripAddDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="@string/textViewDetailsAdd"
                 android:textSize="12sp" />
 
         </TableRow>
 
-        <View
-		    android:layout_width="fill_parent"
-		    android:layout_height="1dp"
-		    android:background="@android:color/darker_gray"/>
-       
         <TableRow
-            android:id="@+id/tableRow4"
+            android:id="@+id/tableRowCreateTripDetails"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
 
-            <Button
-                android:id="@+id/buttonDialogTest"
-                android:layout_width="wrap_content"
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="ButtonA" />
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:textSize="14sp"
+                android:text="@string/editTextTripDetails" >
 
-            <Button
-                android:id="@+id/buttonDialogTest2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ButtonB" />
+                <requestFocus />
+            </EditText>
 
         </TableRow>
+
     </TableLayout>

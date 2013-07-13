@@ -23,8 +23,8 @@
     <string name="textViewCampusVan">VAN</string>
     <string name="textViewCampusBby">BBY</string>
     <string name="textViewUsernameDriver">Drivers Username</string>
-    <string name="textViewCampusStart">Campus Start:</string>
-    <string name="textViewCapusEnd">Campus End:</string>
+    <string name="textViewCampusStart">Start Campus:</string>
+    <string name="textViewCampusEnd">End Campus:</string>
     <string name="textViewLocationMeetDetails">Meeting Location Details:</string>
     <string name="textViewDataLocationMeetingDetails">Meet you in the the parking lot next to Waterfront Station. Please be one time. Let me know if you will be running late. Text or call me. See you then!</string>
     <string name="textViewCarpoolGuests">Carpool Guests:</string>
@@ -48,5 +48,14 @@
     <string name="dialogTitleCampusEnd">Select End Campus:</string>
     <string name="textViewTitleCreateNewTrip">Create New Trip Post</string>
     <string name="textViewCampusSelect">Select a Campus</string>
+    <string name="textViewPickTime">Set trip time</string>
+    <string name="textViewPickDate">TRIP DATE</string>
+    <string name="textViewTo">TO</string>
+    <string name="textViewFrom">FROM</string>
+    <string name="editTextTripDetails">Add Trip Details</string>
+    <string name="textViewDetailsAdd">DETAILS</string>
+    <string name="textButtonCreate">CREATE</string>
+    <string name="textButtonCancel">CANCEL</string>
+    <string name="textViewPickTimeSet">TRIP TIME</string>
 
 </resources>
