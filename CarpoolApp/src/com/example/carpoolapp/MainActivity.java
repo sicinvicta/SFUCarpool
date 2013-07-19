@@ -1,14 +1,19 @@
 package com.example.carpoolapp;
 
+
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 
 @SuppressLint("NewApi")
@@ -17,7 +22,38 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
     AppSectionsPagerAdapter mAppSectionsPagerAdapter;
 
     ViewPager mViewPager;
+    
+    @Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
 
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+    	case R.id.menuItemCreatePost:
+    		Toast.makeText(MainActivity.this,"CREATE Button Clicked", Toast.LENGTH_SHORT).show();
+    		Intent intent = new Intent(MainActivity.this, CreateNewTripActivity.class);
+            startActivity(intent);
+    		return true;
+    	
+    	case R.id.menuItemSettings:
+    		Toast.makeText(MainActivity.this, "SETTINGS Button Clicked", Toast.LENGTH_SHORT).show();
+    		return true;
+    		
+    	case R.id.menuItemManagePosts:
+    		Toast.makeText(MainActivity.this, "SETTINGS Button Clicked", Toast.LENGTH_SHORT).show();
+            return true;
+            
+        default:
+        	return super.onOptionsItemSelected(item);
+		}
+	}
+
+    
+    @Override 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -68,7 +104,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
       
     }
 
-    @Override
+	@Override
     public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
     }
 

@@ -33,10 +33,14 @@ public final class R {
         public static final int selectorgrey=0x7f020006;
     }
     public static final class id {
-        public static final int action_settings=0x7f09002d;
         public static final int buttonCreateTripCancel=0x7f090002;
         public static final int buttonCreateTripCreate=0x7f090003;
         public static final int editText1=0x7f090015;
+        public static final int menuItemCreatePost=0x7f09002f;
+        public static final int menuItemCreatePostCancel=0x7f090030;
+        public static final int menuItemCreatePostDone=0x7f090031;
+        public static final int menuItemManagePosts=0x7f09002e;
+        public static final int menuItemSettings=0x7f09002d;
         public static final int pager=0x7f090000;
         public static final int tableRow1=0x7f090016;
         public static final int tableRow2=0x7f090017;
@@ -89,8 +93,11 @@ public final class R {
     }
     public static final class menu {
         public static final int main=0x7f080000;
+        public static final int menu_create_post=0x7f080001;
     }
     public static final class string {
+        public static final int action_cancel=0x7f060038;
+        public static final int action_done=0x7f060039;
         public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
         public static final int dialogAccept=0x7f060029;
