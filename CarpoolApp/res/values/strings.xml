@@ -59,5 +59,13 @@
     <string name="textViewPickTimeSet">TRIP TIME</string>
     <string name="action_cancel">Cancel</string>
     <string name="action_done">Done</string>
+    
+    
+    
+    <string name="user_nameF">Your First Name</string>
+    <string name="user_nameL">Your Last Name</string>
+    <string name="user_type">Enter your SFU email"</string>
+    <string name="user_id">User _ID</string>
+    <string name="user_password">Enter Password</string>
 
 </resources>

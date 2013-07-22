@@ -7,6 +7,8 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +16,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.carpoolapp.MainActivity"
+            android:name="com.example.carpoolapp.ViewTripDetailsActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,11 +24,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".CarpoolDatabase"/>
+        <activity android:name=".CarpoolDatabaseHelper"/>
+        <activity android:name=".MyUserListActivity"/>
+        <activity android:name=".MyUserEntryActivity"/>
         <activity android:name=".ViewTripsActivity"/>
         <activity android:name=".MyTripsActivity"/>
         <activity android:name=".CreateTripActivity"/>
         <activity android:name=".CreateNewTripActivity"/>
-        <activity android:name=".ViewTripDetailsActivity"/>
+        <activity android:name=".HomeActivity"/>
     </application>
 
 </manifest>

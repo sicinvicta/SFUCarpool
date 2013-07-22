@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+         
+    
+    
+<TableLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -7,7 +17,7 @@
     android:background="#e5e5e5" >
     
     <TableRow
-        android:id="@+id/tableRow1"
+        android:id="@+id/tableRow_viewTripDetails_Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" 
         android:layout_marginTop="10dp"
@@ -24,7 +34,7 @@
     </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow2"
+        android:id="@+id/tableRow_viewTripDetails_DriverImg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#ffffff"
@@ -56,44 +66,51 @@
                    android:layout_height="wrap_content"
                    android:text="@string/textViewUsernameDriver" />
            </TableRow>
-
-           <TableRow
-               android:layout_width="0dp"
-               android:layout_height="wrap_content"
-               android:layout_weight="3"
-               android:orientation="vertical" >
-               
-               <ImageView
-		           android:layout_width="0dp"
-		           android:layout_height="50dp"
-		           android:layout_weight=".5"
-		           android:layout_marginRight="10dp"
-		           android:baselineAlignBottom="false"
-		           android:src="@drawable/icon_sms" />
-               
-               <ImageView
-		           android:layout_width="0dp"
-		           android:layout_height="50dp"
-		           android:layout_weight=".5"
-		           android:layout_marginRight="10dp"
-		           android:baselineAlignBottom="false"
-		           android:src="@drawable/icon_email" />
-               
-               <ImageView
-		           android:layout_width="0dp"
-		           android:layout_height="50dp"
-		           android:layout_weight=".5"
-		           android:layout_marginRight="10dp"
-		           android:baselineAlignBottom="false"
-		           android:src="@drawable/icon_leave" />
-               
-           </TableRow>
        </TableLayout>
 
     </TableRow>
-<!-- CAMPUS TO AND FROM -->  
+<!-- CAMPUS TO AND FROM -->
+
     <TableRow
-         android:id="@+id/tableRow3"
+        android:id="@+id/tableRow_viewTripDetails_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+	
+        <Button
+            android:id="@+id/buttonCall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Call Driver"
+            android:textSize="12sp" />
+        <Button
+            android:id="@+id/buttonSendSMS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Send SMS"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/buttonSendEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Send Email"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/buttonLeaveTrip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Leave Trip"
+            android:textSize="12sp" />
+
+    </TableRow>
+  
+    <TableRow
+         android:id="@+id/tableRow_viewTripDetails_CampusTo_From"
          android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="10dp"
@@ -140,7 +157,7 @@
     
 <!-- TRIP DATE AND TIME -->
     <TableRow
-        android:id="@+id/tableRow4"
+        android:id="@+id/tableRow_viewTripDetails_date_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="10dp"
@@ -157,7 +174,7 @@
             android:textColor="@android:color/holo_blue_dark" />
 
         <TextView
-            android:id="@+id/textViewCreateTripCampusStart"
+            android:id="@+id/tvTripDetail_Date"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
@@ -173,7 +190,7 @@
             android:textColor="@android:color/holo_blue_dark" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/tvTripDetail_Time"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
@@ -188,10 +205,11 @@
 
 <!-- CARPOOL GUESTS -->    
     <TableRow
-        android:id="@+id/tableRow6"
+        android:id="@+id/tableRow_viewTripDetails_GuestsTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="10dp" >
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp" >
 
         <TextView
             android:id="@+id/textView9"
@@ -200,16 +218,20 @@
             android:layout_weight="1"
             android:text="@string/textViewCarpoolGuests"
             android:textColor="@android:color/holo_blue_dark" />
-
-        <TextView
-            android:id="@+id/textView10"
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow_viewTripDetails_Guests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp" 
+        android:paddingBottom="10dp" >
+     <TextView
+            android:id="@+id/tvTripDetail_Guests"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:text="@string/textViewDataCarpoolGuests" />
-
     </TableRow>
-    
      <View
 	    android:layout_width="fill_parent"
 	    android:layout_height="1dp"
@@ -217,7 +239,7 @@
      
 <!-- MEETING LOCATION DETAILS -->
      <TableRow
-         android:id="@+id/tableRow5"
+         android:id="@+id/tableRow_viewTripDetails_Details"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:paddingTop="10dp"
@@ -236,7 +258,7 @@
 <!-- MEETING LOCATION DETAILS TEXTAREA -->
 
      <TextView
-         android:id="@+id/textView14"
+         android:id="@+id/tvTripDetail_DetailTextArea"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:paddingBottom="10dp"
@@ -253,38 +275,46 @@
      
 <!-- DRIVERS CAR DETAILS TITLE -->
      <TableRow
-         android:id="@+id/tableRow7"
+         android:id="@+id/tableRow_viewTripDetails_carDetailsTitle"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:paddingLeft="10dp"
          android:paddingRight="10dp"
-         android:paddingTop="10dp"
-         android:paddingBottom="5dp">
+         android:paddingTop="10dp">
 
          <TextView
              android:id="@+id/textView15"
              android:layout_width="0dp"
              android:layout_height="wrap_content"
-             android:layout_weight="3"
+             android:layout_weight="1"
              android:text="@string/textViewCarDetails"
              android:textColor="@android:color/holo_blue_dark"/>
+         </TableRow>
+         
+     <TableRow
+         android:id="@+id/tableRow_viewTripDetails_carDetails"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:paddingLeft="10dp"
+         android:paddingRight="10dp"
+         android:paddingBottom="5dp">
          
          <TextView
-             android:id="@+id/textView16"
+             android:id="@+id/tvTripDetail_CarMake"
              android:layout_width="0dp"
              android:layout_height="wrap_content"
              android:layout_weight="1"
              android:text="@string/textViewDataCarMake" />
          
          <TextView
-             android:id="@+id/textView17"
+             android:id="@+id/tvTripDetail_CarModel"
              android:layout_width="0dp"
              android:layout_height="wrap_content"
              android:layout_weight="1"
              android:text="@string/textViewDataCarModel" />
          
          <TextView
-             android:id="@+id/textView18"
+             android:id="@+id/tvTripDetail_CarYear"
              android:layout_width="0dp"
              android:layout_height="wrap_content"
              android:layout_weight="1"
@@ -296,7 +326,8 @@
              android:layout_height="wrap_content"
              android:layout_weight="1"
              android:text="@string/textViewDataCarColor" />
-
-     </TableRow>
+		</TableRow>
     
 </TableLayout>
+
+ </ScrollView>

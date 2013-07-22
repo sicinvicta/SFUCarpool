@@ -65,7 +65,7 @@ public class CreateNewTripActivity extends Activity {
         buttonCreate = (Button) findViewById(R.id.buttonCreateTripCreate);
         buttonCancel = (Button) findViewById(R.id.buttonCreateTripCancel);
         
-        textViewCampusStart = (TextView) findViewById(R.id.textViewCreateTripCampusStart);
+        textViewCampusStart = (TextView) findViewById(R.id.tvTripDetail_Date);
         textViewCampusEnd = (TextView) findViewById(R.id.textViewCreateTripCampusEnd);
         textViewDate = (TextView) findViewById(R.id.textViewCreateTripPickDate);
         textViewTime = (TextView) findViewById(R.id.textViewCreateTripPickTime);
